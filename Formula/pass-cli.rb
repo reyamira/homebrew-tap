@@ -5,12 +5,12 @@
 class PassCli < Formula
   desc "Secure, cross-platform CLI password and API key manager for developers"
   homepage "https://github.com/reyamira/pass-cli"
-  version "0.18.0"
+  version "0.19.0"
   license "MIT"
 
   on_macos do
-    url "https://github.com/reyamira/pass-cli/releases/download/v0.18.0/pass-cli_0.18.0_darwin_all.tar.gz"
-    sha256 "6c870b74332f2ac21976f9b78001c0fa5be56026200983d488219f7994957d0d"
+    url "https://github.com/reyamira/pass-cli/releases/download/v0.19.0/pass-cli_0.19.0_darwin_all.tar.gz"
+    sha256 "2ae983854bb7c3faaf238eba229f3ff91cf6b1d16e3e226eeab4378194f489a3"
 
     define_method(:install) do
       bin.install "pass-cli"
@@ -19,15 +19,15 @@ class PassCli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/reyamira/pass-cli/releases/download/v0.18.0/pass-cli_0.18.0_linux_x86_64.tar.gz"
-      sha256 "7a96c777374a13f194a06b4b1a27c93dc4888ed2d37a71fdfc2c951465e04a4d"
+      url "https://github.com/reyamira/pass-cli/releases/download/v0.19.0/pass-cli_0.19.0_linux_x86_64.tar.gz"
+      sha256 "5447b5d6b3c629bb8d2bffe5b8638dd82f48d7e2c908ed1999a035f9141449f3"
       define_method(:install) do
         bin.install "pass-cli"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/reyamira/pass-cli/releases/download/v0.18.0/pass-cli_0.18.0_linux_arm64.tar.gz"
-      sha256 "dde208736c4378c0563d630a0e9d80e14a956764dedb8ef3456f6bde272d626c"
+      url "https://github.com/reyamira/pass-cli/releases/download/v0.19.0/pass-cli_0.19.0_linux_arm64.tar.gz"
+      sha256 "50bc18cfeeca128a01a0da9c004bc4c4b5670c055194dab675d216a916485069"
       define_method(:install) do
         bin.install "pass-cli"
       end
